@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	
+	<!--
+	Author: Alex Roberts
+	Date: 3/8/2020
+	-->
+	<head>
+		<meta charset = "utf-8">
+		<title> Osiris - Home </title>
+		<link href = "Styles/style.css" rel = "stylesheet">
+		<link href = "https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel = "stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body class = "homebody">
+		<header class = "homehead">
+
+			<!-- 
+			The title of the webpage
+			-->
+			<div class = "wrap">
+				<h1> The Osiris Site </h1>
+			</div>
+
+			<!--
+			Navigation portion of the website
+			whish is kept on the left side.
+			-->
+			<nav role = "navigation">
+  				<div id = "menuToggle">
+
+    				<!--
+    				A fake / hidden checkbox is used as click reciever,
+    				so you can use the :checked selector on it.
+    				-->
+    				<input type = "checkbox" />
+    
+    				<!--
+    				Some spans to act as a hamburger.
+    				-->
+    				<span></span>
+    				<span></span>
+    				<span></span>
+    
+    				<!--
+    				The menu is inside of the button.
+    				-->
+    				<ul id = "menu">
+      					<a href = "index.html"><li> Home </li></a>
+      					<a href = "lore.html"><li> Lore </li></a>
+      					<a href = "abilities.html"><li> Abilities </li></a>
+      					<a href = "#"><li> Skins </li></a>
+      					<a href = "#"><li> Contact </li></a>
+    				</ul>
+  				</div>
+			</nav>
+			
+		</header>
+
+		<!--
+		Introduction to what the website is about.
+		-->
+		<article class = "intro">
+			<h2> Welcome! </h2>
+			<p class = "info"> This is a fan-page for the god Osiris in the MOBA game SMITE.
+				We cover Osiris' lore, abilities and skins that are currently
+				in the game right now!
+			</p>
+		</article>
+
+	</body>
+
+</html>

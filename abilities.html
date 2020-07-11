@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	
+	<!--
+	Author: Alex Roberts
+	Date: 3/2/2020
+	-->
+	<head>
+		<meta charset = "utf-8">
+		<title> Osiris - Abilities </title>
+		<link href = "Styles/style.css" rel = "stylesheet">
+		<link href = "https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel = "stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body class = "abilbody">
+		<header class = "abilhead">
+
+			<!-- 
+			The title of the webpage
+			-->
+			<div class = "wrap">
+				<h1> The Osiris Site </h1>
+			</div>
+
+			<!--
+			Navigation portion of the website
+			whish is kept on the left side.
+			-->
+			<nav role = "navigation">
+  				<div id = "menuToggle">
+
+    				<!--
+    				A fake / hidden checkbox is used as click reciever,
+    				so you can use the :checked selector on it.
+    				-->
+    				<input type = "checkbox" />
+    
+    				<!--
+    				Some spans to act as a hamburger.
+    				-->
+    				<span></span>
+    				<span></span>
+    				<span></span>
+    
+    				<!--
+    				The menu is inside of the button.
+    				-->
+    				<ul id = "menu">
+      					<a href = "index.html"><li> Home </li></a>
+      					<a href = "lore.html"><li> Lore </li></a>
+      					<a href = "abilities.html"><li> Abilities </li></a>
+      					<a href = "#"><li> Skins </li></a>
+      					<a href = "#"><li> Contact </li></a>
+    				</ul>
+  				</div>
+			</nav>
+			
+		</header>
+
+		<!--
+		Ability information
+		-->
+		<article class = "abilart">
+			<h5> Abilities </h5>
+			<p class = "sicklep">
+				<img class = "sickle" src = "Images/sickle.jpg">
+				<span style = ""> Damage: 70/120/170/220/270(+40% of your Physical Power) / Slow: 20% / Slow Duration: 3s </span>
+			</p>
+			<p class = abilp>	
+				Osiris throws his Sickle forward. It stops at the first enemy hit, dealing damage and Slowing them. The Sickle remains for the duration of the Slow.
+			</p>
+
+			<p class = "flailp">
+				<img class = "flail" src = "Images/flail.jpg">
+				<span style = ""> Damage: 80/135/190/245/300(+75% of your Physical Power) / Speed Buff: 20% for 3s / Sickle Slow Increase: 40% for 3s </span>
+			</p>
+			<p class = "abilp2">
+				Osiris imbues his flail with spiritual energy, striking at the target ground location. Enemies hit take damage, and Osiris gains movement speed. If an enemy is under the effect of Sickle Strike, the target's Slow is increased in power and duration.
+			</p>
+
+			<p class = "tetherp">
+				<img class = "tether" src = "Images/tether.jpg">
+				<span style = ""> Damage Reduction: 10/15/20/25/30% / Stun Duration: 1.4s </span>
+			</p>
+
+			<p class = "abilp3">
+				Osiris flings out mummy wraps, tethering himself to all nearby enemy gods. Targets hit deal reduced damage over the next 4s. The tether can be broken by targets moving far enough away from Osiris. Targets still in range when the duration expires are Stunned.
+			</p>
+
+			<p class = "ultp">
+				<img class = "ult" src ="Images/ult.jpg">
+				<span style = ""> Damage: 220/320/420/520/620 (80% of your Physical Power) / Healing Reduction: All Healing / Duration: 6s </span>
+			</p>
+
+			<p class = "abilp4">
+				Osiris sheds any remaining fragments, gaining the benefit of his Passive, and leaps forward. Osiris targets all enemy gods in the landing area, and rips a fragment of their spirits out, dealing damage and preventing them from healing. Targets are Rooted for 0.4s during the attack. Enemy minions in the target area also take damage.
+			</p>
+
+			<p class = "fragmentp">
+				<img class = "fragment" src = "Images/fragment.jpg">
+				<span style = ""> Physical Damage Mitigation: 2% per missing fragment / Magical Damage Mitigation: 1% per missing fragment </span>
+			</p>
+
+			<p class = "abilp5">
+				Each time Osiris uses an ability he burns away a fragment of his body, gaining Damage Mitigation for each missing fragment. After losing 8 fragments, he becomes his spirit form. He may walk through enemies and enemy blockers, and his Basic Attacks do not incur a movement penalty. This effect lasts for 6 successful Basic Attacks.
+			</p>
+	
+		</article>
+
+	</body>
+
+</html>

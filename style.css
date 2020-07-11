@@ -1,0 +1,501 @@
+/* Author: Alex Roberts
+   Date: 3/8/2020 */
+
+/* Beginning of Home page */
+
+.homebody
+{
+	display: block;
+	background: url(../Images/Osiris.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin: 0;
+}
+
+.homehead
+{
+	display: block;
+	background-color: rgba(0, 0, 0, .6);
+	width: 100%;
+	margin: 0;
+}
+
+.wrap
+{
+	width: 100%;
+	max-width: 24em;
+	margin: 0 auto;
+	padding: 0.5em;
+}
+
+h1
+{
+	text-align: center;
+	font-size: 36px;
+	color: #ffd633;
+	text-shadow: 1.5px 1.5px 1px #ff0000;
+	font-family: "Cinzel"; 
+}
+
+/* Start of Navigation Bar */
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  bottom: 55px;
+  left: 25px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #ffd633;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: #ff0000;
+  text-shadow: .5px .5px 1px #ffd633;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * The hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #ffd633;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #ff0000;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 200px;
+  margin: 50px;
+  margin-left: -25px;
+  padding: auto;
+  padding-top: auto;
+
+  background: rgba(0, 0, 0, .6);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 15px 0;
+  font-size: 22px;
+  font-family: "Cinzel";
+  text-shadow: .5px .5px 1px #ff0000;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+/* End of Navigation Bar */
+
+/* Start of Introduction statement */
+
+.intro
+{
+	background-color: rgba(0, 0, 0, .6);
+	bottom: 0;
+ 	height: 325px;
+  	left: 0;
+  	margin: auto;
+  	position: absolute;
+  	right: 0;
+  	top: 0;
+  	width: 650px;
+}
+
+h2
+{
+	text-align: center;
+	font-size: 32px;
+	color: #ffd633;
+	text-shadow: 1.5px 1.5px 1px #ff0000;
+	font-family: "Cinzel";
+}
+
+.info
+{
+	position: relative;
+	font-family: "Cinzel";
+	color: #ffd633;
+	font-size: 22px;
+	text-shadow: .5px .5px 1px #ff0000;
+	text-align: center;
+}
+
+/* End of Introduction Statement */
+
+/* End of Home page */
+
+/* Beginning of Lore page */
+
+.lorebody
+{
+	display: block;
+	background: url(../Images/Osiris.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin: 0;
+}
+
+.lorehead
+{
+	display: block;
+	background-color: rgba(0, 0, 0, .6);
+	width: 100%;
+	margin: 0;
+}
+
+.lorewrap
+{
+	width: 100%;
+	max-width: 24em;
+	margin: 0 auto;
+	margin-bottom: -13px;
+	padding: 0.5em;
+}
+
+h3
+{
+	text-align: center;
+	margin-top: 25px;
+	font-size: 36px;
+	color: #ffd633;
+	text-shadow: 1.5px 1.5px 1px #ff0000;
+	font-family: "Cinzel"; 
+}
+
+.loreart
+{
+	background-color: rgba(0, 0, 0, .6);
+	bottom: 0;
+ 	height: 550px;
+  	left: 0;
+  	margin: auto;
+  	position: absolute;
+  	right: 0;
+  	top: 5px;
+  	width: 1225px;
+}
+
+h4
+{
+	text-align: center;
+	font-size: 32px;
+	color: #ffd633;
+	text-shadow: 1.5px 1.5px 1px #ff0000;
+	font-family: "Cinzel";
+}
+
+.lorep
+{
+	position: relative;
+	font-family: "Cinzel";
+	color: #ffd633;
+	font-size: 22px;
+	text-shadow: .5px .5px 1px #ff0000;
+	text-align: center;
+}
+
+/* End of Lore Page */
+
+/* Beginning of Abilities Page */
+
+.abilbody
+{
+	display: block;
+	background: url(../Images/Osiris.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin: 0;
+}
+
+.abilhead
+{
+	display: block;
+	background-color: rgba(0, 0, 0, .6);
+	width: 100%;
+	margin: 0;
+}
+
+.abilwrap
+{
+	width: 100%;
+	max-width: 24em;
+	margin: 0 auto;
+	margin-bottom: -13px;
+	padding: 0.5em;
+}
+
+.abilart
+{
+	background-color: rgba(0, 0, 0, .6);
+	bottom: 0;
+ 	height: 1150px;
+  	left: 0;
+  	margin: auto;
+  	position: absolute;
+  	right: 0;
+  	top: 595px;
+  	width: 1225px;
+}
+
+h5
+{
+	text-align: center;
+	font-size: 32px;
+	color: #ffd633;
+	text-shadow: 1.5px 1.5px 1px #ff0000;
+	font-family: "Cinzel";
+}
+
+.sickle
+{
+	padding-left: 25px;
+}
+
+.abilp
+{
+	position: relative;
+	font-family: "Cinzel";
+	color: #ffd633;
+	font-size: 22px;
+	text-shadow: .5px .5px 1px #ff0000;
+	text-align: left;
+	padding-left: 25px;
+}
+
+.sicklep
+{
+	display: flex;
+	position: relative;
+	font-family: "Cinzel";
+	color: #ffd633;
+	font-size: 22px;
+	text-shadow: .5px .5px 1px #ff0000;
+	align-items: center;
+	text-indent: 25px;
+	text-align: center;
+}
+
+.flail
+{
+	padding-left: 25px;
+}
+
+.abilp2
+{
+	position: relative;
+	font-family: "Cinzel";
+	color: #ffd633;
+	font-size: 22px;
+	text-shadow: .5px .5px 1px #ff0000;
+	text-align: left;
+	padding-left: 25px;
+}
+
+.flailp
+{
+	display: flex;
+	position: relative;
+	font-family: "Cinzel";
+	color: #ffd633;
+	font-size: 22px;
+	text-shadow: .5px .5px 1px #ff0000;
+	align-items: center;
+	text-align: center;
+	text-indent: -20px;
+}
+
+.tether
+{
+	padding-left: 25px;
+}
+
+.abilp3
+{
+	position: relative;
+	font-family: "Cinzel";
+	color: #ffd633;
+	font-size: 22px;
+	text-shadow: .5px .5px 1px #ff0000;
+	text-align: left;
+	padding-left: 25px;
+}
+
+.tetherp
+{
+	display: flex;
+	position: relative;
+	font-family: "Cinzel";
+	color: #ffd633;
+	font-size: 22px;
+	text-shadow: .5px .5px 1px #ff0000;
+	align-items: center;
+	text-align: center;
+	text-indent: 25px;
+}
+
+.ult
+{
+	padding-left: 25px;
+}
+
+.abilp4
+{
+	position: relative;
+	font-family: "Cinzel";
+	color: #ffd633;
+	font-size: 22px;
+	text-shadow: .5px .5px 1px #ff0000;
+	text-align: left;
+	padding-left: 25px;
+}
+
+.ultp
+{
+	display: flex;
+	position: relative;
+	font-family: "Cinzel";
+	color: #ffd633;
+	font-size: 22px;
+	text-shadow: .5px .5px 1px #ff0000;
+	align-items: center;
+	text-align: center;
+	text-indent: -5px;
+}
+
+.fragment
+{
+	padding-left: 25px;
+}
+
+.abilp5
+{
+	position: relative;
+	font-family: "Cinzel";
+	color: #ffd633;
+	font-size: 22px;
+	text-shadow: .5px .5px 1px #ff0000;
+	text-align: left;
+	padding-left: 25px;
+}
+
+.fragmentp
+{
+	display: flex;
+	position: relative;
+	font-family: "Cinzel";
+	color: #ffd633;
+	font-size: 22px;
+	text-shadow: .5px .5px 1px #ff0000;
+	align-items: center;
+	text-align: center;
+	text-indent: -12px;
+}
+
+/* End of Abilities Page  */
+
+/* Beginning of Skins Page  */
+
